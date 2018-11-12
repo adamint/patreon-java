@@ -44,7 +44,7 @@ public class SocialConnections {
     private List<String> scopes;
     private String url;
 
-    public String getUserId() {
+    public String getUser_id() {
       return user_id;
     }
 

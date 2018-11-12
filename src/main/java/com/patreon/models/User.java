@@ -16,7 +16,6 @@ import java.util.stream.Collectors;
 
 @Type("user")
 public class User extends BaseResource {
-
   /**
    * Metadata about fields in User
    */
@@ -139,7 +138,7 @@ public class User extends BaseResource {
   }
 
   public String getDiscordId() {
-    return socialConnections.getDiscord() != null ? socialConnections.getDiscord().getUserId() : null;
+    return socialConnections.getDiscord() != null ? socialConnections.getDiscord().getUser_id() : null;
   }
 
   public String getTwitch() {
